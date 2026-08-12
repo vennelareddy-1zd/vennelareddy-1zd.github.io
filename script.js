@@ -1,0 +1,1 @@
+const links=document.querySelectorAll('nav a');const sections=document.querySelectorAll('main section[id]');window.addEventListener('scroll',()=>{let current='home';sections.forEach(s=>{if(scrollY>=s.offsetTop-180)current=s.id});links.forEach(a=>a.style.color=a.getAttribute('href')==='#'+current?'#9eff00':'')});
